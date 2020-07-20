@@ -86,6 +86,8 @@ services:
   
   vernemq:
     image: vernemq/vernemq
+    environment:
+      ACCEPT_EULA: "yes"
     ports:
       - "1883:1883"
       - "8081:8080"
