@@ -6,6 +6,10 @@ github.com/cyberark/conjur-api-go/conjurapi
 github.com/cyberark/conjur-api-go/conjurapi/authn
 github.com/cyberark/conjur-api-go/conjurapi/logging
 github.com/cyberark/conjur-api-go/conjurapi/response
+# github.com/eclipse/paho.mqtt.golang v1.2.0
+## explicit
+github.com/eclipse/paho.mqtt.golang
+github.com/eclipse/paho.mqtt.golang/packets
 # github.com/golang/gddo v0.0.0-20200324184333-3c2cc9a6329d
 ## explicit
 github.com/golang/gddo/httputil/header
@@ -21,6 +25,10 @@ github.com/gorilla/mux
 github.com/sirupsen/logrus
 # golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2
 golang.org/x/crypto/ssh/terminal
+# golang.org/x/net v0.0.0-20200520004742-59133d7f0dd7
+golang.org/x/net/internal/socks
+golang.org/x/net/proxy
+golang.org/x/net/websocket
 # golang.org/x/sys v0.0.0-20200519105757-fe76b779f299
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
