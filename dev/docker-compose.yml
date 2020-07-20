@@ -83,6 +83,19 @@ services:
       pkiaas-network:
         aliases:
           - pkiaas-tester
+  
+  vernemq:
+    image: vernemq/vernemq
+    ports:
+      - "1883:1883"
+      - "8081:8080"
+      - "8888:8888"
+    volumes:
+      - ./etc/vernemq:/etc/vernemq
+    depends_on:
+      - pkiaas-tester
+    networks:
+      - pkiaas-network
 
 volumes:
   conjur-certificate:
