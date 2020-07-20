@@ -86,14 +86,12 @@ services:
   
   vernemq:
     image: vernemq/vernemq
-    environment:
-      ACCEPT_EULA: "yes"
     ports:
       - "1883:1883"
       - "8081:8080"
       - "8888:8888"
     volumes:
-      - ./etc/vernemq:/etc/vernemq
+      - ./etc/vernemq:/vernemq/etc
     depends_on:
       - pkiaas-tester
     networks:
